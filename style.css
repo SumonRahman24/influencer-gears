@@ -1,0 +1,169 @@
+/* font  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --primary: #3a3a3a;
+  --secondary: #e02c6d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* --------------------------
+        ------ [ Common Style ] ------ 
+             -----------------------------*/
+.section--container {
+  padding: 0 100px;
+  margin-top: 100px;
+}
+
+.title--primary {
+  font-size: 26px;
+  font-weight: 500;
+  color: var(--primary);
+}
+
+.title--heading {
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 45px;
+}
+
+.desc--primary,
+nav a {
+  font-size: 16px;
+  font-weight: 400;
+  /* color: var(--primary); */
+  color: gray;
+}
+
+.primary-btn {
+  background: var(--secondary);
+  border: none;
+  border-radius: 41px;
+  padding: 10px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* ============================================================================ */
+
+/* ------ [ Navigation ] ------ */
+
+header {
+  /* background-image: url("./images/Circle\ design.svg"); */
+  background-repeat: no-repeat;
+  height: 100vh;
+
+  border: 2px solid green;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav > ul {
+  display: flex;
+  list-style: none;
+  font-weight: 300;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+/* banner container */
+.banner-container {
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
+
+  background-image: url("./images/Circle\ design.svg");
+  background-repeat: no-repeat;
+
+  position: absolute;
+  left: 100px;
+
+  height: 100vh;
+}
+
+img {
+  width: 100%;
+}
+
+/* .banner-img {
+  background-image: url("./images/Circle\ design.svg");
+  height: 300px;
+  width: 300px;
+  background-repeat: no-repeat;
+  border: 2px solid green;
+} */
+
+.camera-img {
+  position: absolute;
+  /* width: 100%; */
+  right: 50px;
+}
+
+/* --------------------------
+        ------ [ Sponsors Logo ] ------ 
+             -----------------------------*/
+.sponsors-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 100px;
+}
+
+.border-mark {
+  border-bottom: 1px solid red;
+}
+
+/* --------------------------
+        ------ [ Footer Section ] ------ 
+             -----------------------------*/
+.footer-container {
+  background: #0a0826;
+  height: 200px;
+  color: #d9dbe1;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-icon {
+  display: flex;
+  gap: 20px;
+}
+
+.brand-icon i {
+  background: #22213c;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  margin-top: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyright-title {
+  margin: 8px auto;
+}
