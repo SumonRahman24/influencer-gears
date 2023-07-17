@@ -57,17 +57,14 @@ nav a {
 /* ------ [ Navigation ] ------ */
 
 header {
-  /* background-image: url("./images/Circle\ design.svg"); */
-  background-repeat: no-repeat;
   height: 100vh;
-
-  border: 2px solid green;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 40px;
 }
 
 nav > ul {
@@ -88,34 +85,23 @@ nav a {
 .banner-container {
   padding-top: 100px;
   display: flex;
+  align-items: center;
+  justify-content: center;
   justify-content: space-between;
-  gap: 70px;
+  gap: 250px;
 
+  margin-top: 100px;
+}
+
+.banner-img {
   background-image: url("./images/Circle\ design.svg");
-  background-repeat: no-repeat;
-
-  position: absolute;
-  left: 100px;
-
   height: 100vh;
-}
-
-img {
-  width: 100%;
-}
-
-/* .banner-img {
-  background-image: url("./images/Circle\ design.svg");
-  height: 300px;
-  width: 300px;
+  width: 600px;
   background-repeat: no-repeat;
-  border: 2px solid green;
-} */
 
-.camera-img {
   position: absolute;
-  /* width: 100%; */
-  right: 50px;
+  right: 0px;
+  top: 170px;
 }
 
 /* --------------------------
@@ -134,6 +120,10 @@ img {
 
 .sponsors-container img {
   width: 60px;
+  margin: 20px auto;
+}
+
+.banner-desc {
   margin: 20px auto;
 }
 
@@ -266,6 +256,15 @@ img {
   }
   .sponsors-container {
     flex-wrap: wrap;
+  }
+  nav,
+  ul,
+  .banner-container {
+    flex-direction: column;
+    height: 100vh;
+  }
+  .banner-img {
+    position: relative;
   }
 }
 
