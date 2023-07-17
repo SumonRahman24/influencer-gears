@@ -17,7 +17,7 @@
         ------ [ Common Style ] ------ 
              -----------------------------*/
 .section--container {
-  padding: 0 100px;
+  padding: 0 120px;
   margin-top: 100px;
 }
 
@@ -49,6 +49,7 @@ nav a {
   font-size: 16px;
   font-weight: 500;
   color: #fff;
+  cursor: pointer;
 }
 
 /* ============================================================================ */
@@ -133,6 +134,52 @@ img {
 }
 
 /* --------------------------
+        ------ [ Popular Collection ] ------ 
+             -----------------------------*/
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+
+  margin-top: 40px;
+}
+
+.card {
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+}
+
+.card-img img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.card-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.card-price {
+  font-size: 25px;
+  font-weight: 400;
+  color: var(--primary);
+}
+
+.card-rating {
+  color: orange;
+  font-size: 10px;
+}
+
+.card-desc {
+  font-size: 15px;
+  font-weight: 400;
+  /* color: var(--primary); */
+  color: gray;
+}
+/* --------------------------
         ------ [ Featured Products ] ------ 
              -----------------------------*/
 .featured-products {
@@ -197,9 +244,16 @@ img {
  =========> { Responsive Small Device } <============ 
  ------------------------------------------------------*/
 @media screen and (max-width: 576px) {
+  .section--container {
+    padding: 0;
+  }
   .featured-products {
     flex-direction: column;
     padding: 0 20px;
     gap: 0px;
+  }
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0;
   }
 }
