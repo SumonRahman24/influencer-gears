@@ -23,7 +23,7 @@
 
 .title--primary {
   font-size: 26px;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--primary);
 }
 
@@ -133,6 +133,31 @@ img {
 }
 
 /* --------------------------
+        ------ [ Featured Products ] ------ 
+             -----------------------------*/
+.featured-products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+
+  margin-bottom: 70px;
+}
+
+.featured-content {
+  margin-bottom: 35px;
+}
+
+.featured-desc {
+  margin: 15px auto;
+}
+
+.featured-btn {
+  margin-top: 20px;
+  border-radius: 0px;
+}
+
+/* --------------------------
         ------ [ Footer Section ] ------ 
              -----------------------------*/
 .footer-container {
@@ -166,4 +191,15 @@ img {
 
 .copyright-title {
   margin: 8px auto;
+}
+
+/*------------------------------------------------------
+ =========> { Responsive Small Device } <============ 
+ ------------------------------------------------------*/
+@media screen and (max-width: 576px) {
+  .featured-products {
+    flex-direction: column;
+    padding: 0 20px;
+    gap: 0px;
+  }
 }
