@@ -111,7 +111,7 @@ nav a {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 50px;
+  column-gap: 8px;
   margin-bottom: 100px;
 
   border-top: 1px solid #f1e4ff;
@@ -265,6 +265,9 @@ nav a {
   }
   .banner-img {
     position: relative;
+  }
+  .featured-img img {
+    width: 100%;
   }
 }
 
